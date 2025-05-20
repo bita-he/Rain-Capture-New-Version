@@ -1,6 +1,8 @@
 using UnityEngine;
 
-    public class Movementplayer : MonoBehaviour
+namespace Script.Player
+{
+    public class PlayerController : MonoBehaviour
     {
         public Rigidbody2D rb;
 
@@ -21,7 +23,7 @@ using UnityEngine;
         //movement method
         private void Movement()
         {
-            //get Axis conterol
+            //get Axis control
             var xAxis = Input.GetAxis("Horizontal");
             //force
             var force = new Vector2(xAxis * (speed * Time.deltaTime), 0);
@@ -29,6 +31,14 @@ using UnityEngine;
             //Add force
             rb.AddForce(force, ForceMode2D.Impulse);
         }
+
+        public string Rotate(string input)
+        {
+            //logic
+            
+            return input;
+        }
         
         
     }
+}
