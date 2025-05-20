@@ -21,7 +21,7 @@ namespace Script.Player
             Movement();
         }
         //movement method
-        private void Movement()
+        public void Movement()
         {
             //get Axis control
             var xAxis = Input.GetAxis("Horizontal");
@@ -31,14 +31,5 @@ namespace Script.Player
             //Add force
             rb.AddForce(force, ForceMode2D.Impulse);
         }
-
-        public string Rotate(string input)
-        {
-            //logic
-            
-            return input;
-        }
-        
-        
     }
 }
