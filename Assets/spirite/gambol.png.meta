@@ -186,7 +186,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gambol_0: -3391562695272386763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
