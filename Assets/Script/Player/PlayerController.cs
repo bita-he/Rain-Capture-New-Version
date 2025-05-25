@@ -13,7 +13,7 @@ namespace Script.Player
         {
             rb = GetComponent<Rigidbody2D>();
             //init speed
-            speed = 10.0f;
+            speed = 15.0f;
         }
         
         private void FixedUpdate()

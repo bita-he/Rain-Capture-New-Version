@@ -679,8 +679,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4279242768
+  m_fontColor: {r: 0.06415099, g: 0.062335394, b: 0.062335394, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1128,7 +1128,7 @@ GameObject:
   - component: {fileID: 1087674626}
   - component: {fileID: 1087674628}
   m_Layer: 0
-  m_Name: wall (1)
+  m_Name: RightWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1198,7 +1198,7 @@ Transform:
   m_GameObject: {fileID: 1087674625}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.26, y: 0.06, z: 0}
+  m_LocalPosition: {x: 10.19, y: -0.01, z: 0}
   m_LocalScale: {x: -1.1981901, y: 9.907201, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 546110580}
   gameOverText: {fileID: 1781221079}
-  tryAgainButton: {fileID: 0}
+  tryAgainButton: {fileID: 1999654843}
   gameOverScore: -50
 --- !u!1 &1781221079
 GameObject:
@@ -1590,8 +1590,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 300, y: 70}
+  m_AnchoredPosition: {x: 0, y: -180}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1999654845
 MonoBehaviour:
@@ -1636,7 +1636,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1999654846}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1615349835}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1999654846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,7 +1699,7 @@ GameObject:
   - component: {fileID: 2043375687}
   - component: {fileID: 2043375689}
   m_Layer: 0
-  m_Name: wall
+  m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1757,7 +1769,7 @@ Transform:
   m_GameObject: {fileID: 2043375686}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.22, y: 0.08, z: 0}
+  m_LocalPosition: {x: -10.35, y: 0.1, z: 0}
   m_LocalScale: {x: -1.1981901, y: 9.955746, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
